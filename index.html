@@ -181,45 +181,61 @@ section{ padding: clamp(60px, 8vw, 110px) 0; position:relative; }
 }
 .hero-cta{ display:flex; gap:12px; flex-wrap:wrap; width: 100%; }
 
-/* ── Stats (Fully Safe Mobile Padding & Layout Fix) ── */
-.stats-wrap { padding: 0 0 clamp(40px, 8vw, 80px) 0; border-bottom: 1px solid var(--border); width: 100%; }
+/* ── Stats (Responsive, centered on phones) ── */
+.stats-wrap { padding: 0 clamp(16px, 5vw, 56px) clamp(40px, 8vw, 80px); border-bottom: 1px solid var(--border); width: 100%; }
 .stats-row{
-  display:grid; 
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 30px; 
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(16px, 3vw, 30px);
   width: 100%;
+  min-width: 0;
 }
-.stat{ 
-  display: flex; 
-  flex-direction: column; 
-  align-items: flex-start; 
+.stat{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   width: 100%;
+  min-width: 0;
 }
 .stat-n{
-  font-family: var(--ff-heading); 
+  font-family: var(--ff-heading);
   font-size: clamp(2.5rem, 8vw, 3rem);
-  font-weight: 600; 
-  color: var(--text-main); 
-  line-height: 1.1; 
+  font-weight: 600;
+  color: var(--text-main);
+  line-height: 1.1;
   margin-bottom: 6px;
+  max-width: 100%;
+  white-space: nowrap;
 }
-.stat-l{ 
-  font-family: var(--ff-body); 
-  font-weight: 500; 
-  font-size: 0.8rem; 
-  color: var(--text-muted); 
-  text-transform: uppercase; 
+.stat-l{
+  font-family: var(--ff-body);
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
   letter-spacing: 0.05em;
+  line-height: 1.35;
+  max-width: 100%;
+  overflow-wrap: anywhere;
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .stats-row {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: center;
     gap: 32px;
   }
   .stat {
-    align-items: flex-start;
-    padding-left: 2px;
+    align-items: center;
+    padding-left: 0;
+    text-align: center;
+  }
+  .stat-n {
+    width: auto;
+    text-align: center;
+  }
+  .stat-l {
+    text-align: center;
   }
 }
 
@@ -407,6 +423,44 @@ footer{
   transition:opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
 }
 .rv.in{ opacity:1; transform:translateY(0); }
+
+
+
+/* ── Final phone stats override: centered with safe screen-edge padding ── */
+@media (max-width: 768px) {
+  .stats-wrap.w {
+    padding-left: max(16px, 5vw) !important;
+    padding-right: max(16px, 5vw) !important;
+  }
+
+  .stats-wrap.w .stats-row {
+    grid-template-columns: minmax(0, 1fr) !important;
+    justify-items: center !important;
+  }
+
+  .stats-wrap.w .stat {
+    width: 100% !important;
+    min-width: 0;
+    align-items: center !important;
+    padding-left: 0 !important;
+    text-align: center !important;
+  }
+
+  .stats-wrap.w .stat-n,
+  .stats-wrap.w .stat-l {
+    max-width: 100%;
+    text-align: center !important;
+  }
+
+  .stats-wrap.w .stat-n {
+    width: auto;
+    white-space: nowrap;
+  }
+
+  .stats-wrap.w .stat-l {
+    overflow-wrap: anywhere;
+  }
+}
 
 </style>
 </head>
