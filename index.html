@@ -17,11 +17,11 @@
   --bg-surface: #E8E5DD;    
   --border: #C4BFB2;        
   
-  --text-main: #242220;     
+  --text-main: #242220;    
   --text-muted: #6B6862;    
   
   --accent: #A64D3A;        
-  --accent-hover: #8C3E2D; 
+  --accent-hover: #8C3E2D;  
 
   --ff-heading: 'Playfair Display', serif;
   --ff-body: 'Inter', sans-serif;
@@ -219,7 +219,7 @@ section{ padding: clamp(60px, 8vw, 110px) 0; position:relative; }
   }
   .stat {
     align-items: flex-start;
-    padding-left: 2px; /* Keeps numbers safely away from exact screen boundaries */
+    padding-left: 2px;
   }
 }
 
@@ -710,7 +710,7 @@ const obs = new IntersectionObserver((entries,o)=>{
       const iv=setInterval(()=>{
         c=Math.min(c+step,t);
         num.textContent=Math.floor(c)<10?'0'+Math.floor(c)+'+':Math.floor(c)+'+';
-  518  if(c>=t) clearInterval(iv);
+        if(c>=t) clearInterval(iv);
       },40);
       delete num.dataset.target;
     }
