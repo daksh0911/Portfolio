@@ -1,0 +1,33 @@
+# Daksh Patel — Full-Stack Developer Portfolio
+
+> Daksh Patel is a Full-Stack Web Developer and Computer Engineering student based in Ahmedabad, India. He builds clean, intuitive, high-performance web applications backed by dependable backend logic.
+
+## Contact & Profiles
+- Email: dppatel2529@gmail.com
+- Phone: +91 93168 16553
+- GitHub: https://github.com/daksh0911
+- LinkedIn: https://www.linkedin.com/in/dakshpatel09
+- Instagram: https://www.instagram.com/code.and.creatives/
+
+## Core Skills & Technologies
+- Frontend: HTML5, CSS3, JavaScript (ES6+), React.js, Responsive Design, CSS Animations
+- Backend & Databases: Node.js, PHP, SQL, REST APIs
+- Other Programming & Tools: C, C++, Java, Git, Wireframing, UI/UX Design
+
+## Services Offered
+1. Web Development: Fast, responsive websites and full-stack applications with databases and dashboards.
+2. Brand Web: Websites with bespoke typography, motion, and visual brand identity.
+3. Web Redesign: Performance optimization, modern aesthetic refresh, and responsive overhauls.
+
+## Featured Projects
+- NovaCRM: Full-stack Customer Relationship Management platform for pipeline tracking and client directories.
+  - Live Demo: https://nova-crm-pflh.onrender.com
+  - Tags: Full-Stack, Dashboard, Database
+
+- WanderPlan India: Dynamic travel itinerary generator with real-time weather integration and budget tracking.
+  - Live Demo: https://wander-plan-xuj8.onrender.com
+  - Tags: API Integration, Live Data, React
+
+- APEX Supercars: Concept luxury automotive showcase featuring custom interactive layouts and dynamic color configurator.
+  - Live Demo: https://apex-car-sale.onrender.com
+  - Tags: Frontend, UI/UX, JavaScript
