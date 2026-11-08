@@ -20,6 +20,10 @@
 3. Web Redesign: Performance optimization, modern aesthetic refresh, and responsive overhauls.
 
 ## Featured Projects
+- Verdé Salon: Luxury salon booking system and client management platform with live slot reservation, stylist management, and client cards.
+  - Live Demo: https://verde-salon-main.vercel.app/
+  - Tags: Full-Stack, React, Booking Engine
+
 - NovaCRM: Full-stack Customer Relationship Management platform for pipeline tracking and client directories.
   - Live Demo: https://nova-crm-pflh.onrender.com
   - Tags: Full-Stack, Dashboard, Database
